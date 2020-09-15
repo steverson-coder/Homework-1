@@ -8,9 +8,11 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+    <!--change sematic tag to HEADER: contains h1 and unordered list-->
+    <header> <!--change reference in css to HEADER not the class of HEADER-->
+        <!--Change class seo to id bc only one throughout the entire code-->
+        <h1>Hori<span id="seo">seo</span>n</h1>
+        <section>
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -22,25 +24,30 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </section>
+    </header>
+    <!--change sematic tag to HEADER: contains h1 and unordered list-->
+
+
     <div class="hero"></div>
+
+    <!--Change classes to properties bc there were repeated css styling and so then one css line applies to all classes here-->
     <div class="content">
-        <div class="search-engine-optimization">
+        <div class="properties">
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </div>
-        <div id="online-reputation-management" class="online-reputation-management">
+        <div id="properties" class="properties">
             <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </div>
-        <div id="social-media-marketing" class="social-media-marketing">
+        <div id="properties" class="properties">
             <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
@@ -48,22 +55,25 @@
             </p>
         </div>
     </div>
+    <!--Change classes to properties bc there were repeated css styling and so then one css line applies to all classes here-->
+
+    <!--Change benefits to one benefit name bc those classes were use with the exact same css-->
     <div class="benefits">
-        <div class="benefit-lead">
+        <div class="benefit-class"> 
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </div>
-        <div class="benefit-brand">
+        <div class="benefit-class">
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" />
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </div>
-        <div class="benefit-cost">
+        <div class="benefit-class">
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png"></img>
             <p>
@@ -71,12 +81,16 @@
             </p>
         </div>
     </div>
-    <div class="footer">
+    <!--Change benefits to one benefit name bc those classes were use witht he exact same css-->
+
+    <!--change sematic tag to FOOTER -->
+    <footer> <!--change reference in css to FOOTER not the class of FOOTER-->
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
-    </div>
+    </footer>
+    <!--change sematic tag to FOOTER -->
 </body>
 
 </html>
